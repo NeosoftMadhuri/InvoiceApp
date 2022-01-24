@@ -1,0 +1,14 @@
+.invoiceBackground
+{
+    background-color: cadetblue;
+    /* background-color: aqua; */
+    width:100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.link
+{
+    text-decoration: none;
+    color: white;
+}
+

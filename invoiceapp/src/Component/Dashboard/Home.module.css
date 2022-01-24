@@ -1,0 +1,73 @@
+
+  
+  /*
+      AUTO GRID
+      Set the minimum item size with `--auto-grid-min-size` and you'll
+      get a fully responsive grid with no media queries.
+    */
+    .autoGrid {
+      --auto-grid-min-size: 14rem;
+      width: 100%;
+      margin: 10px auto;
+      display: grid;
+      grid-template-columns: repeat(
+        auto-fill,
+        minmax(var(--auto-grid-min-size), 1fr)
+      );
+      grid-gap: 0.5rem;
+    }
+     
+    .listItem {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      min-width: 120px;
+      height: 110px;
+      padding: 1rem;
+      list-style-type: none;
+      text-align: center;
+      border-bottom: 1px solid rgb(184, 184, 184);
+      border-radius: 4px;
+      background-color: white;
+    }
+  
+
+    
+    .listItem h2 {
+      text-align: left;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 15px;
+      padding: 0px 25px;
+      cursor: pointer;
+      color: rgb(156, 156, 156)
+    }
+    
+    
+    .listItem p {
+      text-align: center;
+      font-size: 25px;
+      line-height: 20px;
+      text-align: left;
+      padding: 0px 25px 10px 25px;
+      font-weight: 100;
+      cursor: pointer;
+     
+    }
+    
+    .listItem:hover {
+      background-color: #f8f8f8;
+     
+    }
+    
+    .listItem:hover h2 {
+      color: rgb(0, 0, 0);
+     
+    }
+    
+    
+
+
+      
+   
